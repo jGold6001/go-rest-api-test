@@ -10,3 +10,11 @@ storage:
   database: postgres
   username: postgres
   password: postgres
+mongodb:
+  host: localhost
+  port: 27017
+  database: user-service
+  auth_db:
+  username:
+  password:
+  collection: users

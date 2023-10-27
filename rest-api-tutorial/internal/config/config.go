@@ -14,6 +14,15 @@ type Config struct {
 		Port   string `yaml:"port" env-default:"8080"`
 	} `yaml:"listen"`
 	Storage StorageConfig `yaml:"storage"`
+	MongoDB struct {
+		Host       string `json:"host"`
+		Port       string `json:"port"`
+		Database   string `json:"database"`
+		AuthDB     string `json:"auth_db"`
+		Username   string `json:"username"`
+		Password   string `json:"password"`
+		Collection string `json:"collection"`
+	} `json:"mongodb"`
 }
 
 type StorageConfig struct {
